@@ -1,7 +1,7 @@
-title: Tetuo41.GitHub.io
-description: hp
+title: tetuo41.GitHub.io
+description: HP
 google_analytics: 
-show_downloads: true
+show_downloads: false
 theme: jekyll-theme-midnight
 
 gems:
