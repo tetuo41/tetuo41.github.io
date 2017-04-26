@@ -1,65 +1,20 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Tetuo41.GitHub.io by tetuo41</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-  </head>
-  <body>
-      <div id="header">
-        <nav>
-          <li class="fork"><a href="https://github.com/tetuo41">View On GitHub</a></li>
-        </nav>
-      </div><!-- end header -->
+### Welcome to My GitHub Pages.
 
-    <div class="wrapper">
+### about me
 
-      <section>
-        <div id="title">
-          <h1>Tetuo41.GitHub.io</h1>
-          <p>hp</p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/tetuo41">tetuo41</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
-        </div>
+#### My account list
 
-        <h3>Welcome to My GitHub Pages.</h3>
-        <p></p>
+- [blog](http://blog.tetuo41.com/)
+- [hatenablog (not updated)](http://tetuo41.hatenablog.com/)
+- [github](https://github.com/tetuo41)
+- [twitter](https://twitter.com/tetuo41)
+- [Google+](https://plus.google.com/+HirokiHatsushika)
+- [soundcloud](https://soundcloud.com/hirokihatsushika)
+- [facebook](https://ja-jp.facebook.com/public/Hiroki-Hatsushika)
+- [medium](https://medium.com/@tetuo41)
 
-        <h3>about me</h3>
- 
-        <p>My account list</p>
-        <ul>
-          <li><a href="http://blog.tetuo41.com/">blog</a></li>
-          <li><a href="http://tetuo41.hatenablog.com/">hatenablog (not updated)</a></li>
-          <li><a href="https://github.com/tetuo41">github</a></li>
-          <li><a href="https://twitter.com/tetuo41">twitter</li>
-          <li><a href="https://plus.google.com/+HirokiHatsushika">Google+</a></li>
-          <li><a href="https://soundcloud.com/hirokihatsushika">soundcloud</a></li>
-          <li><a href="https://ja-jp.facebook.com/public/Hiroki-Hatsushika">facebook</a></li>
-          <li><a href="https://medium.com/@tetuo41">medium</a></li>
-        </ul>
+#### Services
 
-        <h3>Services</h3>
-        <ul>
-          <li><a href="http://study.tetuo41.com/">勉強会</a> scraping event site</li>
-        </ul>
-      </section>
+- [勉強会 scraping event site](http://study.tetuo41.com/)
 
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
-  </body>
-</html>
