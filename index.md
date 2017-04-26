@@ -1,22 +1,65 @@
-### Welcome to GitHub Pages.
-This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Tetuo41.GitHub.io by tetuo41</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-```
-$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-```
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/tetuo41">View On GitHub</a></li>
+        </nav>
+      </div><!-- end header -->
 
-If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.
+    <div class="wrapper">
 
-### Designer Templates
-We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.
+      <section>
+        <div id="title">
+          <h1>Tetuo41.GitHub.io</h1>
+          <p>hp</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/tetuo41">tetuo41</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
 
-### Rather Drive Stick?
-If you prefer to not use the automatic generator, push a branch named `gh-pages` to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.
+        <h3>Welcome to My GitHub Pages.</h3>
+        <p></p>
 
-### Authors and Contributors
-You can @mention a GitHub username to generate a link to their profile. The resulting `<a>` element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (@defunkt), PJ Hyett (@pjhyett), and Tom Preston-Werner (@mojombo) founded GitHub.
+        <h3>about me</h3>
+ 
+        <p>My account list</p>
+        <ul>
+          <li><a href="http://blog.tetuo41.com/">blog</a></li>
+          <li><a href="http://tetuo41.hatenablog.com/">hatenablog (not updated)</a></li>
+          <li><a href="https://github.com/tetuo41">github</a></li>
+          <li><a href="https://twitter.com/tetuo41">twitter</li>
+          <li><a href="https://plus.google.com/+HirokiHatsushika">Google+</a></li>
+          <li><a href="https://soundcloud.com/hirokihatsushika">soundcloud</a></li>
+          <li><a href="https://ja-jp.facebook.com/public/Hiroki-Hatsushika">facebook</a></li>
+          <li><a href="https://medium.com/@tetuo41">medium</a></li>
+        </ul>
 
-### Support or Contact
-Having trouble with Pages? Check out the documentation at https://help.github.com/pages or contact support@github.com and we’ll help you sort it out.
+        <h3>Services</h3>
+        <ul>
+          <li><a href="http://study.tetuo41.com/">勉強会</a> scraping event site</li>
+        </ul>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
