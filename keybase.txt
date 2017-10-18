@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/tetuo41
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://tetuo41.com
+  * I am tetuo41 (https://keybase.io/tetuo41) on keybase.
+  * I have a public key ASDO0lgPTM74Y4K9pCP35Q85bbZG1zBqrofNamvhTI0XMwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120ced2580f4ccef86382bda423f7e50f396db646d7306aae87cd6a6be14c8d17330a",
+      "host": "keybase.io",
+      "kid": "0120ced2580f4ccef86382bda423f7e50f396db646d7306aae87cd6a6be14c8d17330a",
+      "uid": "37cac05176f63cd2db432a7cd7670919",
+      "username": "tetuo41"
+    },
+    "merkle_root": {
+      "ctime": 1508293028,
+      "hash": "49773edd5e8a7504cf4ff08c3cb1bc383927d68ab4517e139f8e99096aca59faa078b6ed206d334c340123fbd371543e2f5610447037f6720283529222169a55",
+      "hash_meta": "a1ad81b27ec6ba25959bf1b5715f4d6025a214daa2f0c2d4d8a66439af1bfa14",
+      "seqno": 1594757
+    },
+    "service": {
+      "hostname": "tetuo41.com",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.33"
+  },
+  "ctime": 1508293050,
+  "expire_in": 504576000,
+  "prev": "c3d66572079205bbc7120782269ba961427138cbb8eb72eeea6c7a2ff75b8669",
+  "seqno": 7,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgztJYD0zO+GOCvaQj9+UPOW22Rtcwaq6HzWpr4UyNFzMKp3BheWxvYWTFA0F7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwY2VkMjU4MGY0Y2NlZjg2MzgyYmRhNDIzZjdlNTBmMzk2ZGI2NDZkNzMwNmFhZTg3Y2Q2YTZiZTE0YzhkMTczMzBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwY2VkMjU4MGY0Y2NlZjg2MzgyYmRhNDIzZjdlNTBmMzk2ZGI2NDZkNzMwNmFhZTg3Y2Q2YTZiZTE0YzhkMTczMzBhIiwidWlkIjoiMzdjYWMwNTE3NmY2M2NkMmRiNDMyYTdjZDc2NzA5MTkiLCJ1c2VybmFtZSI6InRldHVvNDEifSwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE1MDgyOTMwMjgsImhhc2giOiI0OTc3M2VkZDVlOGE3NTA0Y2Y0ZmYwOGMzY2IxYmMzODM5MjdkNjhhYjQ1MTdlMTM5ZjhlOTkwOTZhY2E1OWZhYTA3OGI2ZWQyMDZkMzM0YzM0MDEyM2ZiZDM3MTU0M2UyZjU2MTA0NDcwMzdmNjcyMDI4MzUyOTIyMjE2OWE1NSIsImhhc2hfbWV0YSI6ImExYWQ4MWIyN2VjNmJhMjU5NTliZjFiNTcxNWY0ZDYwMjVhMjE0ZGFhMmYwYzJkNGQ4YTY2NDM5YWYxYmZhMTQiLCJzZXFubyI6MTU5NDc1N30sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJ0ZXR1bzQxLmNvbSIsInByb3RvY29sIjoiaHR0cDoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMzMifSwiY3RpbWUiOjE1MDgyOTMwNTAsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJwcmV2IjoiYzNkNjY1NzIwNzkyMDViYmM3MTIwNzgyMjY5YmE5NjE0MjcxMzhjYmI4ZWI3MmVlZWE2YzdhMmZmNzViODY2OSIsInNlcW5vIjo3LCJ0YWciOiJzaWduYXR1cmUifaNzaWfEQFiKoobGgBBbRi+H0qlJrxzyO1n9sNDEfNMR/rqean7BvDHGp+7SxI3rev4idJYbQL14V83drogWQMiUdbvKWwioc2lnX3R5cGUgpGhhc2iCpHR5cGUIpXZhbHVlxCCQocZOMwEjRXy1WPyhfGN1QC2GsUzDWiVUMZ+jKv4Xi6N0YWfNAgKndmVyc2lvbgE=
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/tetuo41
+
+==================================================================
