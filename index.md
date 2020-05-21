@@ -5,7 +5,7 @@
 
 #### My account list
 
-- [blog](http://blog.tetuo41.com/)
+- [blog](https://blog.tetuo41.com/)
 - [hatenablog (not updated)](http://tetuo41.hatenablog.com/)
 - [github](https://github.com/tetuo41)
 - [twitter](https://twitter.com/tetuo41)
