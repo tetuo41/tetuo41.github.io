@@ -1,0 +1,109 @@
+---
+const links = [
+	{ label: 'GitHub', url: 'https://github.com/tetuo41', note: 'コード・プロジェクト' },
+	{ label: 'Keybase', url: 'https://keybase.io/tetuo41', note: '暗号署名による本人証明' },
+	{ label: 'Podcast', url: 'https://yarukinai.github.io/', note: 'ポッドキャスト配信' },
+];
+---
+
+<html lang="ja">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content="tetuo41 (Hiroki Hatsushika) のポートフォリオ" />
+		<title>tetuo41 | Hiroki Hatsushika</title>
+	</head>
+	<body>
+		<main>
+			<header>
+				<h1>tetuo41</h1>
+				<p class="sub">Hiroki Hatsushika — Tokyo</p>
+			</header>
+
+			<section>
+				<h2>プロフィール</h2>
+				<!-- TODO: 自己紹介文を追記 -->
+			</section>
+
+			<section>
+				<h2>実績・リンク</h2>
+				<ul>
+					{links.map((l) => (
+						<li>
+							<a href={l.url}>{l.label}</a>
+							<span class="note">{l.note}</span>
+						</li>
+					))}
+				</ul>
+			</section>
+
+			<section>
+				<h2>記事</h2>
+				<!-- TODO: 記事・エピソードへのリンクを追記 -->
+			</section>
+		</main>
+	</body>
+</html>
+
+<style>
+	:global {
+		font-family:
+			system-ui,
+			-apple-system,
+			'Hiragino Kaku Gothic ProN',
+			'Noto Sans JP',
+			sans-serif;
+	}
+	body {
+		margin: 0;
+		background: #fafafa;
+		color: #1a1a1a;
+		line-height: 1.7;
+	}
+	main {
+		max-width: 42rem;
+		margin: 0 auto;
+		padding: 3rem 1.5rem 5rem;
+	}
+	header h1 {
+		margin: 0;
+		font-size: 2rem;
+		letter-spacing: 0.02em;
+	}
+	.sub {
+		margin: 0.25rem 0 0;
+		color: #666;
+	}
+	section {
+		margin-top: 2.5rem;
+	}
+	h2 {
+		font-size: 1.05rem;
+		border-bottom: 1px solid #e0e0e0;
+		padding-bottom: 0.4rem;
+	}
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		padding: 0.35rem 0;
+	}
+	li a {
+		color: #0b62c4;
+		text-decoration: none;
+		font-weight: 600;
+	}
+	li a:hover {
+		text-decoration: underline;
+	}
+	.note {
+		margin-left: 0.75rem;
+		color: #666;
+		font-size: 0.9rem;
+	}
+</style>
