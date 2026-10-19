@@ -27,7 +27,7 @@ tetuo41.com は本人の身元・活動・実績への入口である。成功�
 
 - リポジトリ: github.com/tetuo41/tetuo41.github.io(master で運用)
 - 配信: Cloudflare Workers(カスタムドメイン tetuo41.com / www)
-- 記事・発信: Blog「Stay Rad」(blog.tetuo41.com、DNS 復旧待ち)、Podcast(yarukinai.github.io)、Medium
+- 記事・発信: Blog「Stay Rad」(blog.tetuo41.com、DNS 復旧待ち)、Podcast(Yarukinai.fm)、Medium
 - 過去の実績: Study Today(勉強会 scraping イベントサイト、運営終了)
 
 ## Capabilities and Constraints
