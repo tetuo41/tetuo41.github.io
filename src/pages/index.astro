@@ -79,11 +79,20 @@ const links = [
 <html lang="ja">
 	<head>
 		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<meta name="description" content="tetuo41 (Hiroki Hatsushika) — Keybase の署名で検証された個人サイト。GitHub・ブログ・Podcast への一次リンク。" />
 		<meta name="theme-color" media="(prefers-color-scheme: light)" content="#fafafa" />
 		<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#09090b" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://tetuo41.com/" />
+		<meta property="og:title" content="tetuo41 — Hiroki Hatsushika" />
+		<meta property="og:description" content="Keybase の署名で検証された個人サイト。Signature-verified personal index." />
+		<meta property="og:image" content="https://tetuo41.com/og.png" />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta name="twitter:card" content="summary_large_image" />
 		<title>tetuo41 — Hiroki Hatsushika</title>
 	</head>
 	<body>
@@ -91,15 +100,16 @@ const links = [
 			<a class="wordmark" href="/"><span class="dot" aria-hidden="true"></span>tetuo41</a>
 			<a class="pill" href="https://keybase.io/tetuo41">
 				<span class="pulse" aria-hidden="true"></span>
-				Keybase で検証済み
+				Keybase で検証済み<span class="pill-gloss">· Signature-verified</span>
 			</a>
 		</header>
 
 		<main>
 			<section class="hero">
+				<p class="eyebrow">Hiroki Hatsushika — Tokyo</p>
 				<h1>tetuo41</h1>
 				<p class="lead">
-					Hiroki Hatsushika — Tokyo。このドメインは Keybase の署名で検証された、一次リンクの置き場所です。
+					このドメインは Keybase の署名で検証された、一次リンクの置き場所です。
 					<!-- TODO: 自己紹介文をここに追記 -->
 				</p>
 				<div class="cta">
@@ -297,6 +307,15 @@ const links = [
 			scroll-behavior: auto;
 		}
 	}
+	.eyebrow {
+		margin: 0 0 0.9rem;
+		font-family: 'Geist Mono', ui-monospace, monospace;
+		font-size: 0.85rem;
+		font-weight: 500;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+		color: var(--muted);
+	}
 	h1 {
 		margin: 0;
 		font-size: clamp(4.5rem, 13vw, 7.5rem);
@@ -424,6 +443,10 @@ const links = [
 		color: var(--accent);
 	}
 
+	.pill-gloss {
+		color: var(--muted);
+	}
+
 	/* footer */
 	footer {
 		max-width: 44rem;
@@ -457,6 +480,9 @@ const links = [
 		.pill {
 			font-size: 0.72rem;
 			padding: 0.3rem 0.65rem;
+		}
+		.pill-gloss {
+			display: none;
 		}
 		.hero {
 			padding: 4.5rem 0 4rem;
