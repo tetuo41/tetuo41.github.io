@@ -20,3 +20,11 @@ Consult these guides before working on related tasks:
 - [Adding or managing content](https://docs.astro.build/en/guides/content-collections/)
 - [Adding styles or using Tailwind](https://docs.astro.build/en/guides/styling/)
 - [Supporting multiple languages](https://docs.astro.build/en/guides/internationalization/)
+
+## Agent Workflow
+
+Full workflow, model assignments, benchmark plan, and rollback: `WORKFLOW.md`.
+
+- Quality gate (typecheck + build + audit) must pass before merge: `bash scripts/quality-gate.sh`
+- Non-trivial changes get an independent review pass via the `reviewer` / `security-reviewer` agents.
+- Classify review findings with the Jev decision gate: load `scripts/jev-risk-gate.ts` in an omp eval cell and run `riskGate(findings)`. Findings with `testStatus: "fail"` are treated as critical/P1 regardless of gate output.
