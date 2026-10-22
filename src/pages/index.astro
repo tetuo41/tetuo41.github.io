@@ -1,10 +1,8 @@
 ---
-import '@fontsource/geist-sans/400.css';
-import '@fontsource/geist-sans/500.css';
-import '@fontsource/geist-sans/700.css';
-import '@fontsource/geist-sans/800.css';
-import '@fontsource/geist-mono/400.css';
-import '@fontsource/geist-mono/500.css';
+import '@fontsource/archivo-black';
+import '@fontsource/archivo/400.css';
+import '@fontsource/archivo/600.css';
+import '@fontsource/ibm-plex-mono/400.css';
 
 const icons: Record<string, string> = {
 	github: `<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.88-.01-1.73-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.63.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.94.85.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05a9.36 9.36 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>`,
@@ -39,7 +37,7 @@ const links = [
 	},
 	{
 		label: 'Blog「Stay Rad」',
-		note: 'blog.tetuo41.com — 執筆先',
+		note: 'blog.tetuo41.com · 執筆先',
 		url: 'https://blog.tetuo41.com/',
 		icon: 'pen',
 	},
@@ -74,6 +72,8 @@ const links = [
 		icon: 'calendar',
 	},
 ];
+
+const tickerText = 'SIGNATURE VERIFIED · KEYBASE ED25519 · TETUO41.COM · TOKYO · HIROKI HATSUSHIKA · ';
 ---
 
 <html lang="ja">
@@ -83,8 +83,7 @@ const links = [
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<meta name="description" content="tetuo41 (Hiroki Hatsushika) — Keybase の署名で検証された個人サイト。GitHub・ブログ・Podcast への一次リンク。" />
-		<meta name="theme-color" media="(prefers-color-scheme: light)" content="#fafafa" />
-		<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#09090b" />
+		<meta name="theme-color" content="#050505" />
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="https://tetuo41.com/" />
 		<meta property="og:title" content="tetuo41 — Hiroki Hatsushika" />
@@ -96,25 +95,31 @@ const links = [
 		<title>tetuo41 — Hiroki Hatsushika</title>
 	</head>
 	<body>
+		<div class="grain" aria-hidden="true"></div>
+
 		<header class="nav">
-			<a class="wordmark" href="/"><span class="dot" aria-hidden="true"></span>tetuo41</a>
-			<a class="pill" href="https://keybase.io/tetuo41">
+			<a class="wordmark" href="/">tetuo41</a>
+			<a class="chip" href="https://keybase.io/tetuo41">
 				<span class="pulse" aria-hidden="true"></span>
-				Keybase で検証済み<span class="pill-gloss">· Signature-verified</span>
+				Keybase で検証済み<span class="chip-gloss">· Signature-verified</span>
 			</a>
 		</header>
 
 		<main>
 			<section class="hero">
-				<p class="eyebrow">Hiroki Hatsushika — Tokyo</p>
 				<h1>tetuo41</h1>
+				<div class="billing">
+					<p>Hiroki Hatsushika</p>
+					<p>Tokyo, Japan</p>
+					<p><a href="https://keybase.io/tetuo41">Signature verified — Keybase</a></p>
+				</div>
 				<p class="lead">
 					このドメインは Keybase の署名で検証された、一次リンクの置き場所です。
 					<!-- TODO: 自己紹介文をここに追記 -->
 				</p>
 				<div class="cta">
 					<a class="btn primary" href="https://github.com/tetuo41">
-						<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.88-.01-1.73-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.63.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.94.85.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05a9.36 9.36 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+						<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-.88-.01-1.73-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.63.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.36 1.12 2.94.85.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.05a9.36 9.36 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.4.2 2.44.1 2.7.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.8-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
 						GitHub
 					</a>
 					<a class="btn" href="https://keybase.io/tetuo41">
@@ -125,7 +130,7 @@ const links = [
 			</section>
 
 			<section class="links" aria-labelledby="links-h">
-				<h2 id="links-h">リンク</h2>
+				<h2 id="links-h">Links</h2>
 				<ul>
 					{links.map((l) => (
 						<li>
@@ -143,6 +148,13 @@ const links = [
 			</section>
 		</main>
 
+		<div class="ticker" aria-hidden="true">
+			<div class="ticker-track">
+				<span>{tickerText.repeat(8)}</span>
+				<span>{tickerText.repeat(8)}</span>
+			</div>
+		</div>
+
 		<footer>
 			<p class="mono">ed25519 ASDO0lgP…XMwo · <a href="/keybase.txt">keybase.txt</a></p>
 			<p>© 2026 tetuo41</p>
@@ -152,36 +164,14 @@ const links = [
 
 <style>
 	:root {
-		--bg: #fafafa;
-		--fg: #18181b;
-		--muted: #6b6b74;
-		--hairline: #e4e4e7;
-		--surface: #ffffff;
-		--hover: #f4f4f5;
-		--accent: #5b5bd6;
-		--accent-soft: rgba(91, 91, 214, 0.08);
-		--btn-primary-bg: #18181b;
-		--btn-primary-fg: #fafafa;
-		--selection: rgba(91, 91, 214, 0.22);
-		--glow: rgba(91, 91, 214, 0.055);
-		color-scheme: light;
-	}
-	@media (prefers-color-scheme: dark) {
-		:root {
-			--bg: #09090b;
-			--fg: #f4f4f5;
-			--muted: #94949e;
-			--hairline: #232327;
-			--surface: #101013;
-			--hover: #17171b;
-			--accent: #8b8bf2;
-			--accent-soft: rgba(139, 139, 242, 0.1);
-			--btn-primary-bg: #f4f4f5;
-			--btn-primary-fg: #09090b;
-			--selection: rgba(139, 139, 242, 0.28);
-			--glow: rgba(139, 139, 242, 0.07);
-			color-scheme: dark;
-		}
+		--bg: #050505;
+		--fg: #fafafa;
+		--muted: #a6a6a6;
+		--hairline: rgba(250, 250, 250, 0.16);
+		--hairline-strong: rgba(250, 250, 250, 0.4);
+		--invert-bg: #fafafa;
+		--invert-fg: #050505;
+		color-scheme: dark;
 	}
 
 	* {
@@ -190,28 +180,72 @@ const links = [
 	html {
 		scroll-behavior: smooth;
 	}
+	html {
+		overflow-x: clip;
+	}
 	body {
 		margin: 0;
-		background:
-			radial-gradient(60rem 30rem ellipse at 50% -12rem, var(--glow), transparent 65%)
-				no-repeat,
-			var(--bg);
+		background: var(--bg);
 		color: var(--fg);
-		font-family: 'Geist Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', system-ui, sans-serif;
+		font-family: 'Archivo', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', system-ui, sans-serif;
 		font-size: 16px;
 		line-height: 1.7;
 		-webkit-font-smoothing: antialiased;
 	}
 	::selection {
-		background: var(--selection);
+		background: var(--invert-bg);
+		color: var(--invert-fg);
 	}
 	:focus-visible {
-		outline: 2px solid var(--accent);
+		outline: 2px solid var(--fg);
 		outline-offset: 3px;
-		border-radius: 4px;
 	}
 	a {
 		color: inherit;
+	}
+	html {
+		scrollbar-color: #2a2a2a var(--bg);
+	}
+
+	/* film grain */
+	.grain {
+		position: fixed;
+		inset: 0;
+		z-index: 40;
+		pointer-events: none;
+		background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+		background-size: 180px 180px;
+		opacity: 0.055;
+		animation: grain-jitter 0.9s steps(1) infinite;
+	}
+	@keyframes grain-jitter {
+		0% {
+			transform: translate(0, 0);
+		}
+		12.5% {
+			transform: translate(-2%, 1.5%);
+		}
+		25% {
+			transform: translate(1.5%, -1%);
+		}
+		37.5% {
+			transform: translate(-1%, 2%);
+		}
+		50% {
+			transform: translate(2%, 1%);
+		}
+		62.5% {
+			transform: translate(-1.5%, -1.5%);
+		}
+		75% {
+			transform: translate(1%, 2%);
+		}
+		87.5% {
+			transform: translate(2%, -1%);
+		}
+		100% {
+			transform: translate(0, 0);
+		}
 	}
 
 	/* nav */
@@ -219,53 +253,51 @@ const links = [
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		max-width: 44rem;
+		max-width: 56rem;
 		margin: 0 auto;
 		padding: 1.4rem 1.5rem 0;
 	}
 	.wordmark {
+		font-family: 'Archivo Black', 'Archivo', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', system-ui, sans-serif;
+		font-weight: 400;
+		font-size: 1rem;
+		letter-spacing: 0.01em;
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+	.chip {
 		display: inline-flex;
 		align-items: center;
 		gap: 0.55rem;
-		font-weight: 700;
-		font-size: 0.95rem;
-		letter-spacing: -0.01em;
-		text-decoration: none;
-	}
-	.dot {
-		width: 8px;
-		height: 8px;
-		border-radius: 50%;
-		background: var(--accent);
-	}
-	.pill {
-		display: inline-flex;
-		align-items: center;
-		gap: 0.5rem;
-		font-size: 0.8rem;
-		font-weight: 500;
+		font-size: 0.72rem;
+		font-weight: 600;
+		letter-spacing: 0.14em;
+		text-transform: uppercase;
 		color: var(--muted);
 		text-decoration: none;
 		border: 1px solid var(--hairline);
-		border-radius: 999px;
-		padding: 0.35rem 0.85rem;
-		background: var(--surface);
-		transition: border-color 150ms ease, color 150ms ease;
+		padding: 0.42rem 0.8rem;
+		transition: color 160ms ease, border-color 160ms ease, background 160ms ease;
 	}
-	.pill:hover {
-		border-color: var(--accent);
-		color: var(--fg);
+	.chip:hover {
+		color: var(--invert-fg);
+		background: var(--invert-bg);
+		border-color: var(--invert-bg);
+	}
+	.chip:hover .pulse {
+		background: var(--invert-fg);
+		animation: none;
 	}
 	.pulse {
 		width: 7px;
 		height: 7px;
 		border-radius: 50%;
-		background: var(--accent);
+		background: var(--fg);
 		animation: pulse 2.4s ease-out infinite;
 	}
 	@keyframes pulse {
 		0% {
-			box-shadow: 0 0 0 0 var(--accent-soft);
+			box-shadow: 0 0 0 0 rgba(250, 250, 250, 0.35);
 		}
 		70% {
 			box-shadow: 0 0 0 7px transparent;
@@ -276,58 +308,82 @@ const links = [
 	}
 
 	main {
-		max-width: 44rem;
+		max-width: 56rem;
 		margin: 0 auto;
 		padding: 0 1.5rem;
 	}
 
-	/* hero */
+	/* hero — the poster */
 	.hero {
-		padding: 6.5rem 0 5.5rem;
-		animation: rise 600ms cubic-bezier(0.16, 1, 0.3, 1) both;
+		padding: 5.5rem 0 5rem;
 	}
-	@keyframes rise {
+	.hero > * {
+		animation: roll-in 700ms cubic-bezier(0.16, 1, 0.3, 1) both;
+	}
+	.hero h1 {
+		animation-delay: 60ms;
+	}
+	.billing {
+		animation-delay: 200ms;
+	}
+	.lead {
+		animation-delay: 340ms;
+	}
+	.cta {
+		animation-delay: 480ms;
+	}
+	@keyframes roll-in {
 		from {
 			opacity: 0;
-			transform: translateY(12px);
+			transform: translateY(18px);
 		}
 		to {
 			opacity: 1;
 			transform: none;
 		}
 	}
-	@media (prefers-reduced-motion: reduce) {
-		.hero {
-			animation: none;
-		}
-		.pulse {
-			animation: none;
-		}
-		html {
-			scroll-behavior: auto;
-		}
+	h1 {
+		margin: 0 calc(50% - 50vw);
+		font-family: 'Archivo Black', 'Archivo', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', system-ui, sans-serif;
+		font-weight: 400;
+		/* measured ink width of TETUO41 in Archivo Black ≈ 5.01em; size to fill the viewport minus gutters */
+		font-size: max(3.2rem, min(24rem, calc((100vw - 4rem) / 5.02)));
+		line-height: 0.85;
+		letter-spacing: -0.015em;
+		text-transform: uppercase;
+		text-align: center;
+		white-space: nowrap;
 	}
-	.eyebrow {
-		margin: 0 0 0.9rem;
-		font-family: 'Geist Mono', ui-monospace, monospace;
-		font-size: 0.85rem;
-		font-weight: 500;
-		letter-spacing: 0.06em;
+
+	.billing {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.4rem 2rem;
+		border-top: 1px solid var(--hairline);
+		margin-top: 2rem;
+		padding-top: 1rem;
+	}
+	.billing p {
+		margin: 0;
+		font-size: 0.72rem;
+		font-weight: 600;
+		letter-spacing: 0.14em;
 		text-transform: uppercase;
 		color: var(--muted);
 	}
-	h1 {
-		margin: 0;
-		font-size: clamp(4.5rem, 13vw, 7.5rem);
-		font-weight: 800;
-		letter-spacing: -0.04em;
-		line-height: 1.02;
+	.billing a {
+		color: var(--fg);
+		text-decoration: none;
+		border-bottom: 1px solid var(--hairline-strong);
+	}
+	.billing a:hover {
+		border-bottom-color: var(--fg);
 	}
 	.lead {
-		margin: 1.4rem 0 0;
+		margin: 1.6rem 0 0;
 		max-width: 36rem;
 		color: var(--muted);
-		font-size: 1.05rem;
+		font-size: 0.95rem;
 	}
 	.cta {
 		display: flex;
@@ -338,47 +394,52 @@ const links = [
 	.btn {
 		display: inline-flex;
 		align-items: center;
-		gap: 0.55rem;
-		padding: 0.62rem 1.15rem;
-		border-radius: 12px;
-		border: 1px solid var(--hairline);
-		background: var(--surface);
+		gap: 0.6rem;
+		padding: 0.72rem 1.3rem;
+		border: 1px solid var(--hairline-strong);
+		background: transparent;
 		color: var(--fg);
 		font-weight: 600;
-		font-size: 0.9rem;
+		font-size: 0.78rem;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
 		text-decoration: none;
-		transition: border-color 150ms ease, background 150ms ease, transform 150ms ease;
+		transition: background 160ms ease, color 160ms ease, border-color 160ms ease, transform 160ms ease;
 	}
 	.btn:hover {
-		border-color: var(--muted);
+		background: var(--invert-bg);
+		color: var(--invert-fg);
+		border-color: var(--invert-bg);
 	}
 	.btn:active {
 		transform: scale(0.98);
 	}
 	.btn.primary {
-		background: var(--btn-primary-bg);
-		color: var(--btn-primary-fg);
-		border-color: transparent;
+		background: var(--invert-bg);
+		color: var(--invert-fg);
+		border-color: var(--invert-bg);
 	}
 	.btn.primary:hover {
-		opacity: 0.88;
+		background: transparent;
+		color: var(--fg);
+		border-color: var(--hairline-strong);
 	}
 	.btn svg {
-		width: 18px;
-		height: 18px;
+		width: 16px;
+		height: 16px;
 	}
 
-	/* links */
+	/* links — the index */
 	.links {
-		padding: 1.5rem 0 4rem;
+		padding: 1.5rem 0 5rem;
 	}
 	h2 {
-		font-size: 0.85rem;
+		font-size: 0.72rem;
 		font-weight: 600;
-		letter-spacing: 0.06em;
+		letter-spacing: 0.14em;
 		color: var(--muted);
 		text-transform: uppercase;
-		margin: 0 0 0.4rem;
+		margin: 0 0 0.6rem;
 	}
 	.links ul {
 		list-style: none;
@@ -396,18 +457,23 @@ const links = [
 		grid-template-columns: auto 1fr auto auto;
 		align-items: center;
 		gap: 1rem;
-		padding: 0.85rem 0.4rem;
+		padding: 0.9rem 0.5rem;
 		text-decoration: none;
-		transition: background 150ms ease;
+		transition: background 160ms ease, color 160ms ease;
 	}
 	.links a:hover {
-		background: var(--hover);
+		background: var(--invert-bg);
+		color: var(--invert-fg);
 	}
 	.icon {
 		display: inline-flex;
 		width: 20px;
 		height: 20px;
 		color: var(--muted);
+		transition: color 160ms ease;
+	}
+	.links a:hover .icon {
+		color: var(--invert-fg);
 	}
 	.icon svg {
 		width: 20px;
@@ -421,6 +487,10 @@ const links = [
 		color: var(--muted);
 		font-size: 0.85rem;
 		text-align: right;
+		transition: color 160ms ease;
+	}
+	.links a:hover .note {
+		color: rgba(5, 5, 5, 0.65);
 	}
 	.arrow {
 		display: inline-flex;
@@ -429,7 +499,7 @@ const links = [
 		color: var(--muted);
 		opacity: 0;
 		transform: translate(-4px, 4px);
-		transition: opacity 150ms ease, transform 150ms ease;
+		transition: opacity 160ms ease, transform 160ms ease, color 160ms ease;
 	}
 	.arrow svg {
 		width: 15px;
@@ -438,18 +508,47 @@ const links = [
 	.links a:hover .arrow {
 		opacity: 1;
 		transform: none;
-	}
-	.links a:hover .icon {
-		color: var(--accent);
+		color: var(--invert-fg);
 	}
 
-	.pill-gloss {
+	.chip-gloss {
 		color: var(--muted);
 	}
+	.chip:hover .chip-gloss {
+		color: rgba(5, 5, 5, 0.65);
+	}
 
-	/* footer */
+	/* ticker — the marquee */
+	.ticker {
+		border-top: 1px solid var(--hairline);
+		border-bottom: 1px solid var(--hairline);
+		overflow: hidden;
+		white-space: nowrap;
+	}
+	.ticker-track {
+		display: inline-flex;
+		animation: marquee 80s linear infinite;
+	}
+	.ticker span {
+		font-size: 0.72rem;
+		font-weight: 600;
+		letter-spacing: 0.14em;
+		text-transform: uppercase;
+		color: var(--muted);
+		padding: 0.65rem 0;
+	}
+	@keyframes marquee {
+		from {
+			transform: translateX(0);
+		}
+		to {
+			transform: translateX(-50%);
+		}
+	}
+
+	/* footer — end card */
 	footer {
-		max-width: 44rem;
+		max-width: 56rem;
 		margin: 0 auto;
 		padding: 2rem 1.5rem 3.5rem;
 		display: flex;
@@ -457,7 +556,6 @@ const links = [
 		align-items: baseline;
 		gap: 1rem;
 		flex-wrap: wrap;
-		border-top: 1px solid var(--hairline);
 	}
 	footer p {
 		margin: 0;
@@ -465,7 +563,7 @@ const links = [
 		font-size: 0.8rem;
 	}
 	.mono {
-		font-family: 'Geist Mono', ui-monospace, monospace;
+		font-family: 'IBM Plex Mono', ui-monospace, monospace;
 		letter-spacing: 0.01em;
 	}
 	.mono a {
@@ -473,19 +571,38 @@ const links = [
 		text-underline-offset: 3px;
 	}
 	.mono a:hover {
-		color: var(--accent);
+		color: var(--fg);
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.hero > *,
+		.pulse,
+		.ticker-track,
+		.grain {
+			animation: none;
+		}
+		html {
+			scroll-behavior: auto;
+		}
+		.arrow {
+			opacity: 1;
+			transform: none;
+		}
 	}
 
 	@media (max-width: 560px) {
-		.pill {
-			font-size: 0.72rem;
-			padding: 0.3rem 0.65rem;
+		.chip {
+			font-size: 0.62rem;
+			padding: 0.36rem 0.6rem;
 		}
-		.pill-gloss {
+		.chip-gloss {
 			display: none;
 		}
 		.hero {
-			padding: 4.5rem 0 4rem;
+			padding: 3.5rem 0 4rem;
+		}
+		.billing {
+			gap: 0.3rem 1.4rem;
 		}
 		.note {
 			display: none;

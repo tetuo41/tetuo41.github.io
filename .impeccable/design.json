@@ -1,50 +1,42 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-19T00:00:00Z",
-  "title": "Design System: tetuo41 — Identity Card",
+  "generatedAt": "2026-10-22T11:30:00Z",
+  "title": "Design System: tetuo41 — Theatrical Black",
   "extensions": {
     "colorMeta": {
-      "bg": { "role": "neutral", "displayName": "Page (Light)", "canonical": "#fafafa" },
-      "fg": { "role": "neutral", "displayName": "Ink (Light)", "canonical": "#18181b" },
-      "muted": { "role": "neutral", "displayName": "Muted Text (Light)", "canonical": "#6b6b74" },
-      "hairline": { "role": "neutral", "displayName": "Hairline (Light)", "canonical": "#e4e4e7" },
-      "surface": { "role": "neutral", "displayName": "Surface (Light)", "canonical": "#ffffff" },
-      "hover": { "role": "neutral", "displayName": "Hover Wash (Light)", "canonical": "#f4f4f5" },
-      "accent": { "role": "primary", "displayName": "Indigo (Light)", "canonical": "#5b5bd6", "tonalRamp": ["rgba(91, 91, 214, 0.055)", "rgba(91, 91, 214, 0.08)", "rgba(91, 91, 214, 0.22)", "#5b5bd6"] },
-      "accent-soft": { "role": "primary", "displayName": "Indigo Soft (Light)", "canonical": "rgba(91, 91, 214, 0.08)" },
-      "selection": { "role": "primary", "displayName": "Selection Tint (Light)", "canonical": "rgba(91, 91, 214, 0.22)" },
-      "glow": { "role": "primary", "displayName": "Hero Glow (Light)", "canonical": "rgba(91, 91, 214, 0.055)" },
-      "bg-dark": { "role": "neutral", "displayName": "Page (Dark)", "canonical": "#09090b" },
-      "fg-dark": { "role": "neutral", "displayName": "Ink (Dark)", "canonical": "#f4f4f5" },
-      "muted-dark": { "role": "neutral", "displayName": "Muted Text (Dark)", "canonical": "#94949e" },
-      "hairline-dark": { "role": "neutral", "displayName": "Hairline (Dark)", "canonical": "#232327" },
-      "surface-dark": { "role": "neutral", "displayName": "Surface (Dark)", "canonical": "#101013" },
-      "hover-dark": { "role": "neutral", "displayName": "Hover Wash (Dark)", "canonical": "#17171b" },
-      "accent-dark": { "role": "primary", "displayName": "Indigo (Dark)", "canonical": "#8b8bf2", "tonalRamp": ["rgba(139, 139, 242, 0.07)", "rgba(139, 139, 242, 0.1)", "rgba(139, 139, 242, 0.28)", "#8b8bf2"] },
-      "selection-dark": { "role": "primary", "displayName": "Selection Tint (Dark)", "canonical": "rgba(139, 139, 242, 0.28)" },
-      "glow-dark": { "role": "primary", "displayName": "Hero Glow (Dark)", "canonical": "rgba(139, 139, 242, 0.07)" }
+      "bg": { "role": "neutral", "displayName": "Screen", "canonical": "#050505", "tonalRamp": ["#050505", "#181818", "#2a2a2a", "#3d3d3d", "#5c5c5c", "#888888", "#b9b9b9", "#fafafa"] },
+      "fg": { "role": "primary", "displayName": "Ink", "canonical": "#fafafa", "tonalRamp": ["#fafafa", "#d6d6d6", "#b9b9b9", "#888888", "#5c5c5c", "#3d3d3d", "#2a2a2a", "#050505"] },
+      "muted": { "role": "neutral", "displayName": "Muted Text", "canonical": "#a6a6a6", "tonalRamp": ["#a6a6a6", "#8f8f8f", "#787878", "#616161", "#4a4a4a", "#333333", "#1d1d1d", "#050505"] },
+      "hairline": { "role": "neutral", "displayName": "Hairline", "canonical": "rgba(250, 250, 250, 0.16)" },
+      "hairline-strong": { "role": "neutral", "displayName": "Hairline Strong", "canonical": "rgba(250, 250, 250, 0.4)" },
+      "invert-bg": { "role": "primary", "displayName": "Inversion Fill", "canonical": "#fafafa", "tonalRamp": ["#fafafa", "#d6d6d6", "#b9b9b9", "#888888", "#5c5c5c", "#3d3d3d", "#2a2a2a", "#050505"] },
+      "invert-fg": { "role": "primary", "displayName": "Inversion Text", "canonical": "#050505", "tonalRamp": ["#050505", "#181818", "#2a2a2a", "#3d3d3d", "#5c5c5c", "#888888", "#b9b9b9", "#fafafa"] },
+      "pulse-ring": { "role": "primary", "displayName": "Pulse Ring", "canonical": "rgba(250, 250, 250, 0.35)" },
+      "scrollbar": { "role": "neutral", "displayName": "Scrollbar Thumb", "canonical": "#2a2a2a" }
     },
     "typographyMeta": {
-      "display": { "displayName": "Display", "purpose": "H1 wordmark only, once per page." },
-      "lead": { "displayName": "Lead", "purpose": "Single muted introduction sentence, max-width 36rem." },
+      "display": { "displayName": "Poster Title", "purpose": "The H1 wordmark TETUO41, once per page, full-bleed, sized to fill the viewport minus gutters." },
+      "lead": { "displayName": "Lead", "purpose": "Single muted Japanese introduction sentence, max-width 36rem." },
       "body": { "displayName": "Body", "purpose": "Base page text, JP-capable stack." },
-      "label": { "displayName": "Label", "purpose": "Uppercase section headings and pill text." },
+      "credits": { "displayName": "Credits Microtype", "purpose": "Film-credit caps: billing block, nav chip, section heading, ticker." },
+      "label": { "displayName": "Row Label", "purpose": "Link-list labels and nav wordmark." },
       "mono": { "displayName": "Mono Proof", "purpose": "Cryptographic fingerprint and keybase.txt only." }
     },
     "shadows": [
-      { "name": "pulse-ring", "value": "0 0 0 7px transparent (keyframed from 0 0 0 0 var(--accent-soft))", "purpose": "Verification pill's expanding pulse; the only box-shadow in the system, and it is transient." }
+      { "name": "pulse-ring", "value": "0 0 0 7px transparent (keyframed from 0 0 0 0 rgba(250,250,250,0.35))", "purpose": "Verification chip's expanding white ring; the only box-shadow in the system, and it is transient." }
     ],
     "motion": [
-      { "name": "state", "value": "150ms ease", "purpose": "All hover/border/color/transform transitions." },
-      { "name": "rise", "value": "600ms cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Hero fade-up on load (opacity 0→1, translateY 12px→0)." },
+      { "name": "state", "value": "160ms ease", "purpose": "All hover/inversion/color/transform transitions." },
+      { "name": "roll-in", "value": "700ms cubic-bezier(0.16, 1, 0.3, 1), staggered 60-480ms", "purpose": "Credits roll-in on load: hero children rise and fade in sequence." },
+      { "name": "marquee", "value": "80s linear infinite (translateX -50%, ~64px/s)", "purpose": "Ticker's seamless loop; each copy wider than the widest viewport; stops under prefers-reduced-motion." },
+      { "name": "grain-jitter", "value": "0.9s steps(1) infinite", "purpose": "Film-grain overlay position jitter at ~8fps; static under prefers-reduced-motion." },
       { "name": "pulse", "value": "2.4s ease-out infinite", "purpose": "Verification dot ring expansion; disabled under prefers-reduced-motion." }
     ],
     "breakpoints": [
-      { "name": "mobile", "value": "max-width: 560px" },
-      { "name": "dark", "value": "prefers-color-scheme: dark" }
+      { "name": "mobile", "value": "max-width: 560px" }
     ],
     "backdrops": [
-      { "name": "hero-glow", "value": "radial-gradient(60rem 30rem ellipse at 50% -12rem, var(--glow), transparent 65%) no-repeat", "purpose": "Full-bleed faint indigo glow behind the hero; the page's only depth cue at rest." }
+      { "name": "film-grain", "value": "fixed overlay, SVG feTurbulence fractalNoise 180px tile, opacity 0.055", "purpose": "Cinematic grain across the whole viewport; atmosphere instead of elevation." }
     ]
   },
   "components": [
@@ -52,63 +44,73 @@
       "name": "Primary Button",
       "kind": "button",
       "refersTo": "btn-primary",
-      "description": "Page-inverted filled action; GitHub CTA in the hero.",
-      "html": "<a class=\"btn primary\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\">…</svg>GitHub</a>",
-      "css": ".btn { display: inline-flex; align-items: center; gap: 0.55rem; padding: 0.62rem 1.15rem; border-radius: 12px; border: 1px solid transparent; background: var(--btn-primary-bg); color: var(--btn-primary-fg); font-weight: 600; font-size: 0.9rem; text-decoration: none; transition: border-color 150ms ease, background 150ms ease, transform 150ms ease; } .btn:hover { opacity: 0.88; } .btn:active { transform: scale(0.98); }"
+      "description": "White-filled rectangular action; GitHub CTA. Hover empties to outline.",
+      "html": "<a class=\"ds-btn ds-btn-primary\" href=\"#\">GitHub</a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.72rem 1.3rem; border: 1px solid var(--hairline-strong, rgba(250,250,250,0.4)); background: transparent; color: var(--fg, #fafafa); font-weight: 600; font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; text-decoration: none; transition: background 160ms ease, color 160ms ease, border-color 160ms ease, transform 160ms ease; } .ds-btn-primary { background: var(--invert-bg, #fafafa); color: var(--invert-fg, #050505); border-color: var(--invert-bg, #fafafa); } .ds-btn-primary:hover { background: transparent; color: var(--fg, #fafafa); border-color: var(--hairline-strong, rgba(250,250,250,0.4)); } .ds-btn:hover { background: var(--invert-bg, #fafafa); color: var(--invert-fg, #050505); border-color: var(--invert-bg, #fafafa); } .ds-btn:active { transform: scale(0.98); } .ds-btn:focus-visible { outline: 2px solid var(--fg, #fafafa); outline-offset: 3px; }"
     },
     {
-      "name": "Secondary Button",
-      "kind": "button",
-      "refersTo": "btn-secondary",
-      "description": "Outlined surface action; Keybase proof CTA in the hero.",
-      "html": "<a class=\"btn\" href=\"#\"><svg width=\"18\" height=\"18\">…</svg>Keybase 証明を見る</a>",
-      "css": ".btn { display: inline-flex; align-items: center; gap: 0.55rem; padding: 0.62rem 1.15rem; border-radius: 12px; border: 1px solid var(--hairline); background: var(--surface); color: var(--fg); font-weight: 600; font-size: 0.9rem; text-decoration: none; transition: border-color 150ms ease, transform 150ms ease; } .btn:hover { border-color: var(--muted); } .btn:active { transform: scale(0.98); }"
-    },
-    {
-      "name": "Verification Pill",
-      "kind": "custom",
-      "refersTo": "verification-pill",
-      "description": "Signature element: Keybase-proof pill with pulsing accent dot.",
-      "html": "<a class=\"pill\" href=\"#\"><span class=\"pulse\"></span>Keybase で検証済み</a>",
-      "css": ".pill { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.8rem; font-weight: 500; color: var(--muted); text-decoration: none; border: 1px solid var(--hairline); border-radius: 999px; padding: 0.35rem 0.85rem; background: var(--surface); transition: border-color 150ms ease, color 150ms ease; } .pill:hover { border-color: var(--accent); color: var(--fg); } .pulse { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); animation: pulse 2.4s ease-out infinite; } @keyframes pulse { 0% { box-shadow: 0 0 0 0 var(--accent-soft); } 70% { box-shadow: 0 0 0 7px transparent; } 100% { box-shadow: 0 0 0 0 transparent; } }"
+      "name": "Verified Chip",
+      "kind": "chip",
+      "refersTo": "verified-chip",
+      "description": "Signature identity chip: Keybase proof in credits microtype with pulsing white dot; inverts on hover.",
+      "html": "<a class=\"ds-chip\" href=\"#\"><span class=\"ds-pulse\"></span>Keybase で検証済み</a>",
+      "css": ".ds-chip { display: inline-flex; align-items: center; gap: 0.55rem; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted, #a6a6a6); text-decoration: none; border: 1px solid var(--hairline, rgba(250,250,250,0.16)); padding: 0.42rem 0.8rem; transition: color 160ms ease, border-color 160ms ease, background 160ms ease; } .ds-chip:hover { color: var(--invert-fg, #050505); background: var(--invert-bg, #fafafa); border-color: var(--invert-bg, #fafafa); } .ds-pulse { width: 7px; height: 7px; border-radius: 50%; background: var(--fg, #fafafa); animation: ds-pulse 2.4s ease-out infinite; } @keyframes ds-pulse { 0% { box-shadow: 0 0 0 0 rgba(250,250,250,0.35); } 70% { box-shadow: 0 0 0 7px transparent; } 100% { box-shadow: 0 0 0 0 transparent; } }"
     },
     {
       "name": "Link List Row",
       "kind": "card",
       "refersTo": "list-row",
-      "description": "Hairline-bordered editorial index row: icon, label, note, reveal-on-hover arrow.",
-      "html": "<li><a href=\"#\"><span class=\"icon\">…</span><span class=\"label\">GitHub</span><span class=\"note\">コード・プロジェクト</span><span class=\"arrow\">…</span></a></li>",
-      "css": ".links li { border-bottom: 1px solid var(--hairline); } .links li:first-child { border-top: 1px solid var(--hairline); } .links a { display: grid; grid-template-columns: auto 1fr auto auto; align-items: center; gap: 1rem; padding: 0.85rem 0.4rem; text-decoration: none; transition: background 150ms ease; } .links a:hover { background: var(--hover); } .links a:hover .icon { color: var(--accent); } .arrow { opacity: 0; transform: translate(-4px, 4px); transition: opacity 150ms ease, transform 150ms ease; } .links a:hover .arrow { opacity: 1; transform: none; }"
+      "description": "Hairline index row that performs the title-card inversion on hover.",
+      "html": "<a class=\"ds-row\" href=\"#\"><span class=\"ds-row-label\">GitHub</span><span class=\"ds-row-note\">コード・プロジェクト</span><span class=\"ds-row-arrow\">→</span></a>",
+      "css": ".ds-row { display: grid; grid-template-columns: 1fr auto auto; align-items: center; gap: 1rem; padding: 0.9rem 0.5rem; text-decoration: none; color: var(--fg, #fafafa); border-bottom: 1px solid var(--hairline, rgba(250,250,250,0.16)); transition: background 160ms ease, color 160ms ease; } .ds-row:hover { background: var(--invert-bg, #fafafa); color: var(--invert-fg, #050505); } .ds-row-label { font-weight: 600; font-size: 0.95rem; } .ds-row-note { color: var(--muted, #a6a6a6); font-size: 0.85rem; } .ds-row:hover .ds-row-note { color: rgba(5,5,5,0.65); } .ds-row-arrow { opacity: 0; transform: translate(-4px, 4px); transition: opacity 160ms ease, transform 160ms ease; } .ds-row:hover .ds-row-arrow { opacity: 1; transform: none; } @media (prefers-reduced-motion: reduce) { .ds-row-arrow { opacity: 1; transform: none; } }"
+    },
+    {
+      "name": "Ticker",
+      "kind": "custom",
+      "refersTo": "ticker",
+      "description": "Signature motion: full-bleed marquee of verified facts in credits microtype, aria-hidden.",
+      "html": "<div class=\"ds-ticker\" aria-hidden=\"true\"><div class=\"ds-ticker-track\"><span>SIGNATURE VERIFIED · KEYBASE ED25519 · TETUO41.COM · TOKYO · HIROKI HATSUSHIKA · </span><span>SIGNATURE VERIFIED · KEYBASE ED25519 · TETUO41.COM · TOKYO · HIROKI HATSUSHIKA · </span></div></div>",
+      "css": ".ds-ticker { border-top: 1px solid var(--hairline, rgba(250,250,250,0.16)); border-bottom: 1px solid var(--hairline, rgba(250,250,250,0.16)); overflow: hidden; white-space: nowrap; } .ds-ticker-track { display: inline-flex; animation: ds-marquee 80s linear infinite; } .ds-ticker span { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted, #a6a6a6); padding: 0.65rem 0; } @keyframes ds-marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } } @media (prefers-reduced-motion: reduce) { .ds-ticker-track { animation: none; } }"
+    },
+    {
+      "name": "Poster Title",
+      "kind": "custom",
+      "refersTo": "display",
+      "description": "The viewport-filling TETUO41 title card in Archivo Black, sized from measured ink width.",
+      "html": "<h1 class=\"ds-title\">tetuo41</h1>",
+      "css": ".ds-title { margin: 0; font-family: 'Archivo Black', 'Archivo', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', system-ui, sans-serif; font-weight: 400; font-size: max(3.2rem, min(24rem, calc((100vw - 4rem) / 5.02))); line-height: 0.85; letter-spacing: -0.015em; text-transform: uppercase; text-align: center; white-space: nowrap; color: var(--fg, #fafafa); }"
     }
   ],
   "narrative": {
-    "northStar": "署名で裏打ちされた静けさ (Quietness backed by a signature)",
-    "overview": "This system does not shout. Identity is asserted once — in a giant, precisely-tracked wordmark — and then verified: a single pulsing accent dot tied to a real Keybase proof. Where the category default is a grid of chatty self-introduction cards, this page is a vertical stack of hairline rules and whitespace. One indigo accent is the only voice; everything else is pure neutral, inverting cleanly between OS light and dark themes. Structure comes from lines, not surfaces. Depth is a single faint radial glow behind the hero — atmosphere, not elevation. Typography is the protagonist: Geist Sans at extreme sizes with tightened tracking, Geist Mono for the cryptographic fingerprint, Japanese text falling to Hiragino/Noto system fallbacks.",
+    "northStar": "黒いスクリーンの一枚のタイトルカード (A title card on a black screen)",
+    "overview": "The page opens like an A24 film: a pure #050505 screen, a viewport-filling white TETUO41 in Archivo Black, and a billing block of tracked microtype underneath. This world is theatrical monochrome — no chromatic accent exists at all. Verification, focus, and hover all speak in white; the only pulsing element is the white dot of the Keybase proof. Everything rectangular. Interaction is one repeated gesture — the title-card inversion: link rows, buttons, and the nav chip flip from black-on-white to white-on-black on hover. Motion is cinematic and authored once: credits roll-in on load, a continuous marquee ticker of verified facts above the footer, and a film-grain overlay jittering at ~1Hz. prefers-reduced-motion stops every animation and reveals the hover arrows statically.",
     "keyCharacteristics": [
-      "Two full OS-following themes, identical structure, inverted neutrals",
-      "Single indigo accent reserved for verification, focus, and hover reveals",
-      "Hairline dividers instead of card surfaces; no shadows at rest",
-      "Verification pill with 2.4s pulsing dot as the signature element",
-      "150ms ease transitions; reduced-motion disables all animation"
+      "Fixed black theme (color-scheme: dark); no light variant, pure monochrome",
+      "Viewport-filling Archivo Black poster title, sized to measured ink width (≈5.01em for TETUO41)",
+      "Film-credit microtype: 0.72rem, 600, +0.14em tracking, uppercase",
+      "Title-card inversion as the single interaction gesture (160ms)",
+      "Continuous marquee ticker + film grain overlay; reduced-motion disables all animation",
+      "IBM Plex Mono reserved for the cryptographic fingerprint and keybase.txt"
     ],
     "rules": [
-      { "name": "The One Voice Rule", "body": "Indigo is reserved for verification, focus, and hover reveals. It never fills a surface larger than a dot or a border. Its rarity is the point.", "section": "colors" },
-      { "name": "The Inversion Rule", "body": "The primary button always inverts against the page: dark-fill/light-text in light theme, light-fill/dark-text in dark theme. It is neutral, never accent-colored.", "section": "colors" },
-      { "name": "The Mono-as-Proof Rule", "body": "Geist Mono appears only where cryptographic identity is spoken (fingerprint, keybase.txt). Don't use it for decoration.", "section": "typography" }
+      { "name": "The Black-Only Rule", "body": "One fixed dark theme; no light variant, no accent hue, no tinted grays. If a design needs color to communicate, it is off-world.", "section": "colors" },
+      { "name": "The Title-Card Rule", "body": "Interaction = inversion. Hover flips background and text between Screen and Ink. Nothing changes hue because no hue exists.", "section": "colors" },
+      { "name": "The Mono-as-Proof Rule", "body": "IBM Plex Mono appears only where cryptographic identity is spoken. Credits microtype is tracked Archivo caps, never mono.", "section": "typography" },
+      { "name": "The Poster Rule", "body": "Display type fills the viewport once, sized from measured ink width; it is never set at a comfortable reading size.", "section": "typography" }
     ],
     "dos": [
-      "Do pair every color change with its dark-theme twin; both themes are first-class.",
-      "Do keep all transitions at 150ms ease and honor prefers-reduced-motion.",
-      "Do use 1px hairlines (--hairline) for all divisions and containment.",
-      "Do reserve Geist Mono for fingerprints, proofs, and machine-facing metadata.",
-      "Do invert the primary button against the current theme's page background."
+      "Do keep the theme black-fixed; both theme-color metas and color-scheme say #050505 / dark.",
+      "Do make every interactive surface invert on hover — one gesture, system-wide, 160ms.",
+      "Do honor prefers-reduced-motion: no roll-in, no pulse, no marquee, no grain jitter; arrows visible.",
+      "Do set credits microtype as tracked Archivo caps (+0.14em), and size display type from measured ink.",
+      "Do keep the ticker and grain decorative: aria-hidden, no unique content, machine text stays in mono."
     ],
     "donts": [
-      "Don't add box-shadows or card surfaces; the system is built from lines and whitespace.",
-      "Don't introduce a second accent hue or gradient fills.",
-      "Don't use the accent as a large background fill, badge, or tag color.",
-      "Don't fabricate content — the page states only verified facts and confirmed links.",
-      "Don't track the display type loosely; −0.04em at 800 weight is the look."
+      "Don't introduce any chromatic color, gradient, or a light theme; monochrome is the identity.",
+      "Don't round corners or add shadows at rest; rectangles and hairlines only.",
+      "Don't set body copy in mono, or decoration in mono — mono is proof text only.",
+      "Don't fabricate content; the page states only verified facts and confirmed links.",
+      "Don't slow the ticker or add second marquee-like motion; it is the one continuous movement."
     ]
   }
 }

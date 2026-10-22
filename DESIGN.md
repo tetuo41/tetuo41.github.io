@@ -1,199 +1,205 @@
 ---
-name: tetuo41 — Identity Card
-description: 署名で裏打ちされた静けさ — Keybase 検証つきの名刺ページ
+name: tetuo41 — Theatrical Black
+description: 黒いスクリーンに浮かぶ一枚のタイトルカード — A24 流の署名検証インデックス
 colors:
-  bg: "#fafafa"
-  fg: "#18181b"
-  muted: "#6b6b74"
-  hairline: "#e4e4e7"
-  surface: "#ffffff"
-  hover: "#f4f4f5"
-  accent: "#5b5bd6"
-  accent-soft: "rgba(91, 91, 214, 0.08)"
-  btn-primary-bg: "#18181b"
-  btn-primary-fg: "#fafafa"
-  selection: "rgba(91, 91, 214, 0.22)"
-  glow: "rgba(91, 91, 214, 0.055)"
-  bg-dark: "#09090b"
-  fg-dark: "#f4f4f5"
-  muted-dark: "#94949e"
-  hairline-dark: "#232327"
-  surface-dark: "#101013"
-  hover-dark: "#17171b"
-  accent-dark: "#8b8bf2"
-  accent-soft-dark: "rgba(139, 139, 242, 0.1)"
-  btn-primary-bg-dark: "#f4f4f5"
-  btn-primary-fg-dark: "#09090b"
-  selection-dark: "rgba(139, 139, 242, 0.28)"
-  glow-dark: "rgba(139, 139, 242, 0.07)"
+  bg: "#050505"
+  fg: "#fafafa"
+  muted: "#a6a6a6"
+  hairline: "rgba(250, 250, 250, 0.16)"
+  hairline-strong: "rgba(250, 250, 250, 0.4)"
+  invert-bg: "#fafafa"
+  invert-fg: "#050505"
+  pulse-ring: "rgba(250, 250, 250, 0.35)"
+  scrollbar: "#2a2a2a"
 typography:
   display:
-    fontFamily: "Geist Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, system-ui, sans-serif"
-    fontSize: "clamp(4.5rem, 13vw, 7.5rem)"
-    fontWeight: 800
-    lineHeight: 1.02
-    letterSpacing: "-0.04em"
+    fontFamily: "Archivo Black, Archivo, Hiragino Kaku Gothic ProN, Noto Sans JP, system-ui, sans-serif"
+    fontSize: "max(3.2rem, min(24rem, calc((100vw - 4rem) / 5.02)))"
+    fontWeight: 400
+    lineHeight: 0.85
+    letterSpacing: "-0.015em"
   lead:
-    fontFamily: "Geist Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, system-ui, sans-serif"
-    fontSize: "1.05rem"
+    fontFamily: "Archivo, Hiragino Kaku Gothic ProN, Noto Sans JP, system-ui, sans-serif"
+    fontSize: "0.95rem"
     fontWeight: 400
     lineHeight: 1.7
   body:
-    fontFamily: "Geist Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, system-ui, sans-serif"
+    fontFamily: "Archivo, Hiragino Kaku Gothic ProN, Noto Sans JP, system-ui, sans-serif"
     fontSize: "16px"
     fontWeight: 400
     lineHeight: 1.7
-  label:
-    fontFamily: "Geist Sans, Hiragino Kaku Gothic ProN, Noto Sans JP, system-ui, sans-serif"
-    fontSize: "0.85rem"
+  credits:
+    fontFamily: "Archivo, Hiragino Kaku Gothic ProN, Noto Sans JP, system-ui, sans-serif"
+    fontSize: "0.72rem"
     fontWeight: 600
     lineHeight: 1.7
-    letterSpacing: "0.06em"
+    letterSpacing: "0.14em"
+  label:
+    fontFamily: "Archivo, Hiragino Kaku Gothic ProN, Noto Sans JP, system-ui, sans-serif"
+    fontSize: "0.95rem"
+    fontWeight: 600
+    lineHeight: 1.7
   mono:
-    fontFamily: "Geist Mono, ui-monospace, monospace"
+    fontFamily: "IBM Plex Mono, ui-monospace, monospace"
     fontSize: "0.8rem"
     fontWeight: 400
     letterSpacing: "0.01em"
 rounded:
-  pill: "999px"
-  control: "12px"
-  focus: "4px"
+  none: "0"
+  dot: "50%"
 spacing:
   nav-y: "1.4rem 0 0"
   gutter: "1.5rem"
-  hero-y: "6.5rem 0 5.5rem"
+  hero-y: "5.5rem 0 5rem"
+  billing-y: "2rem 0 0 1rem"
   cta-gap: "0.75rem"
-  row-y: "0.85rem 0.4rem"
+  row-y: "0.9rem 0.5rem"
   list-gap: "1rem"
   footer-y: "2rem 1.5rem 3.5rem"
 components:
   btn-primary:
-    backgroundColor: "{colors.btn-primary-bg}"
-    textColor: "{colors.btn-primary-fg}"
-    rounded: "{rounded.control}"
-    padding: "0.62rem 1.15rem"
+    backgroundColor: "{colors.invert-bg}"
+    textColor: "{colors.invert-fg}"
+    rounded: "{rounded.none}"
+    padding: "0.72rem 1.3rem"
+  btn-primary-hover:
+    backgroundColor: "transparent"
+    textColor: "{colors.fg}"
+    rounded: "{rounded.none}"
+    padding: "0.72rem 1.3rem"
   btn-secondary:
-    backgroundColor: "{colors.surface}"
+    backgroundColor: "transparent"
     textColor: "{colors.fg}"
-    rounded: "{rounded.control}"
-    padding: "0.62rem 1.15rem"
-  verification-pill:
-    backgroundColor: "{colors.surface}"
+    rounded: "{rounded.none}"
+    padding: "0.72rem 1.3rem"
+  verified-chip:
+    backgroundColor: "transparent"
     textColor: "{colors.muted}"
-    rounded: "{rounded.pill}"
-    padding: "0.35rem 0.85rem"
+    rounded: "{rounded.none}"
+    padding: "0.42rem 0.8rem"
   list-row:
-    backgroundColor: "{colors.bg}"
+    backgroundColor: "transparent"
     textColor: "{colors.fg}"
-    padding: "0.85rem 0.4rem"
+    padding: "0.9rem 0.5rem"
   list-row-hover:
-    backgroundColor: "{colors.hover}"
+    backgroundColor: "{colors.invert-bg}"
+    textColor: "{colors.invert-fg}"
 ---
 
-# Design System: tetuo41 — Identity Card
+# Design System: tetuo41 — Theatrical Black
 
 ## Overview
 
-**Creative North Star: 「署名で裏打ちされた静けさ」(Quietness backed by a signature)**
+**Creative North Star: 「黒いスクリーンの一枚のタイトルカード」(A title card on a black screen)**
 
-This system does not shout. Identity is asserted once — in a giant, precisely-tracked wordmark — and then verified: a single pulsing accent dot tied to a real Keybase proof. Where the category default is a grid of chatty self-introduction cards, this page is a vertical stack of hairline rules and whitespace. One indigo accent is the only voice; everything else is pure neutral, inverting cleanly between OS light and dark themes.
+The page opens like an A24 film: a pure #050505 screen, a viewport-filling white TETUO41 in Archivo Black, and a billing block of tracked microtype underneath. Where the previous identity was a quiet light card with one indigo voice, this world is theatrical monochrome — no chromatic accent exists at all. Verification, focus, and hover all speak in white; the only pulsing element is the white dot of the Keybase proof.
 
-Structure comes from lines, not surfaces. The link list is a bordered editorial index, not a card deck. Depth is a single faint radial glow behind the hero — atmosphere, not elevation. Typography is the protagonist: Geist Sans at extreme sizes with tightened tracking, Geist Mono for the cryptographic fingerprint, Japanese text falling to Hiragino/Noto system fallbacks.
+Everything rectangular. Corners are 0; the only circle in the system is the pulse dot. Interaction is one repeated gesture — the title-card inversion: link rows, buttons, and the nav chip flip from black-on-white to white-on-black on hover. Motion is cinematic and authored once: credits roll-in on load, a continuous marquee ticker of verified facts above the footer, and a film-grain overlay jittering at ~1Hz. `prefers-reduced-motion` stops every animation and reveals the hover arrows statically.
 
 **Key Characteristics:**
-- Two full OS-following themes (`prefers-color-scheme`), identical structure, inverted neutrals
-- Single indigo accent (#5b5bd6 light / #8b8bf2 dark), used sparingly: dot, pulse, focus ring, hover reveals
-- Hairline dividers (#e4e4e7 / #232327) instead of card surfaces
-- Verification pill with a 2.4s pulsing accent dot as the signature element
-- Full-bleed radial glow at the top of the page, ~5–7% accent opacity
-- 150ms ease transitions throughout; reduced-motion disables all animation
+- Fixed black theme (`color-scheme: dark`); no light variant, pure monochrome
+- Viewport-filling Archivo Black poster title, sized to measured ink width (≈5.01em for TETUO41)
+- Film-credit microtype: 0.72rem, 600, +0.14em tracking, uppercase — billing, chip, section heading, ticker
+- Title-card inversion as the single interaction gesture (160ms)
+- Continuous marquee ticker + film grain overlay; reduced-motion disables all animation
+- IBM Plex Mono reserved for the cryptographic fingerprint and keybase.txt
 
 ## Colors
 
-A near-monochrome zinc palette with one indigo accent, designed in light/dark pairs.
+A pure grayscale palette; the darkest value is the page, the lightest is both the ink and the inversion fill.
 
 ### Primary
-- **Indigo** (`--accent`, light `#5b5bd6` / dark `#8b8bf2`): The only chromatic voice. Appears as the wordmark dot, the pulsing verification dot, `:focus-visible` rings, list-row icon tint on hover, footer link hover, and the ghost of the hero glow. Never used as a large fill.
-- **Accent soft** (`--accent-soft`, `rgba(91,91,214,.08)` / `rgba(139,139,242,.1)`): the pulse's expanding ring; **Selection** (`--selection`, `.22`/`.28` alpha) tints text selection; **Glow** (`--glow`, `.055`/`.07`) paints the radial backdrop.
+There is no chromatic primary. **White** (`--fg`, #fafafa) carries identity: display ink, focus rings, the pulse dot, selection fill.
 
 ### Neutral
-- **Page** (`--bg`, `#fafafa` / `#09090b`): page background, also primary-button fill in light (inverted in dark).
-- **Ink** (`--fg`, `#18181b` / `#f4f4f5`): all primary text; also primary-button fill in dark.
-- **Muted** (`--muted`, `#6b6b74` / `#94949e`): secondary text, notes, icons, footer.
-- **Hairline** (`--hairline`, `#e4e4e7` / `#232327`): all dividers, list rows, button and pill borders.
-- **Surface** (`--surface`, `#ffffff` / `#101013`): pill and secondary button fills.
-- **Hover** (`--hover`, `#f4f4f5` / `#17171b`): list-row hover wash.
+- **Screen** (`--bg`, #050505): the page and all resting surfaces; also the inversion text color.
+- **Ink** (`--fg`, #fafafa): all primary text; also the inversion fill (`--invert-bg`).
+- **Muted** (`--muted`, #a6a6a6): secondary text, notes, icons, ticker, footer (8.3:1 on Screen).
+- **Hairline** (`--hairline`, rgba(250,250,250,.16)): row dividers, ticker rules, chip border.
+- **Hairline strong** (`--hairline-strong`, rgba(250,250,250,.4)): secondary button border, billing link underline.
+- **Pulse ring** (`rgba(250,250,250,.35)`): the expanding verification ring; the only box-shadow, transient.
 
 ### Named Rules
-**The One Voice Rule.** Indigo is reserved for verification, focus, and hover reveals. It never fills a surface larger than a dot or a border. Its rarity is the point.
+**The Black-Only Rule.** One fixed dark theme; no light variant, no accent hue, no tinted grays. If a design needs color to communicate, it is off-world.
 
-**The Inversion Rule.** The primary button always inverts against the page: dark-fill/light-text in light theme, light-fill/dark-text in dark theme. It is neutral, never accent-colored.
+**The Title-Card Rule.** Interaction = inversion. Hover flips background and text between Screen and Ink. Nothing changes hue because no hue exists.
 
 ## Typography
 
-**Display Font:** Geist Sans (self-hosted 400/500/700/800) with Hiragino Kaku Gothic ProN → Noto Sans JP → system-ui fallbacks
-**Label/Mono Font:** Geist Mono (400/500) with ui-monospace fallback
+**Display Font:** Archivo Black (self-hosted 400) with Archivo → Hiragino Kaku Gothic ProN → Noto Sans JP fallbacks
+**Body Font:** Archivo (self-hosted 400/500/600/700), same JP fallbacks
+**Mono Font:** IBM Plex Mono (400/500) with ui-monospace fallback
 
-**Character:** A precise grotesque that goes from whisper (0.8rem mono metadata) to shout (7.5rem display) on one family. Mono is reserved for cryptographic and machine-facing text only — the ed25519 fingerprint and keybase.txt link.
+**Character:** One grotesque family in two weights of voice — Archivo Black roars in uppercase at poster scale; Archivo whispers in 0.72rem tracked caps as film credits. Japanese text falls to Hiragino/Noto system faces.
 
 ### Hierarchy
-- **Display** (800, `clamp(4.5rem, 13vw, 7.5rem)`, 1.02, −0.04em): the H1 "tetuo41" alone. Once per page.
-- **Lead** (400, 1.05rem, 1.7, muted color): one-sentence introduction under the H1, max-width 36rem.
-- **Row label** (600, 0.95rem): link-list labels; wordmark uses 700 at 0.95rem, −0.01em.
-- **Label / Section heading** (600, 0.85rem, +0.06em, uppercase, muted): "リンク" and pill text.
+- **Display** (Archivo Black 400, `max(3.2rem, min(24rem, calc((100vw - 4rem)/5.02)))`, 0.85, −0.015em, uppercase, centered, nowrap): the H1 wordmark, once per page, full-bleed; sized so the ink spans the viewport with near-constant side margins (~25–40px across widths; growth stops at the 24rem cap on ≈1930px+ viewports).
+- **Credits** (600, 0.72rem, +0.14em, uppercase, muted): billing block, nav chip, section heading, ticker; 0.62rem on the chip below 560px.
+- **Lead** (400, 0.95rem, 1.7, muted): one Japanese sentence, max-width 36rem.
+- **Row label** (600, 0.95rem): link-list labels; wordmark uses Archivo Black at 1rem.
 - **Note** (400, 0.85rem, muted, right-aligned): per-link annotations; hidden below 560px.
-- **Body / Footer meta** (400, 16px body 1.7 line-height; footer 0.8rem muted).
+- **Mono** (IBM Plex Mono 400, 0.8rem): ed25519 fingerprint and keybase.txt link only.
 
 ### Named Rules
-**The Mono-as-Proof Rule.** Geist Mono appears only where cryptographic identity is spoken (fingerprint, keybase.txt). Don't use it for decoration.
+**The Mono-as-Proof Rule.** IBM Plex Mono appears only where cryptographic identity is spoken. Credits microtype is tracked Archivo caps, never mono.
+
+**The Poster Rule.** Display type fills the viewport once, sized from measured ink width (`calc((100vw - 4rem) / 5.02)` for TETUO41's ≈5.01em ink); it is never set at a comfortable reading size.
 
 ## Layout
 
-A single centered column, `max-width: 44rem` (704px) with 1.5rem gutters, shared by nav, main, and footer. Vertical rhythm: nav (1.4rem top) → hero (6.5rem top / 5.5rem bottom; 4.5/4 on mobile) → links section (1.5rem top / 4rem bottom) → footer (2rem top / 3.5rem bottom, hairline top border).
+A single centered column, `max-width: 56rem` (896px) with 1.5rem gutters, shared by nav, main, and footer. The H1 breaks out full-bleed (`margin: 0 calc(50% - 50vw)`). Vertical rhythm: nav (1.4rem top) → hero (5.5rem top / 5rem bottom; 3.5/4 on mobile) with billing under the title (2rem top, hairline rule, 1rem padding) → links section (1.5rem top / 5rem bottom) → full-bleed ticker → footer (2rem top / 3.5rem bottom).
 
-The link list is one `grid-template-columns: auto 1fr auto auto` row per link (icon · label · note · arrow) separated by hairlines — first row gets a top border, every row a bottom border. The CTA row wraps (`flex-wrap`) with 0.75rem gap. Single breakpoint at 560px: notes drop out, rows go 3-column, footer stacks vertically, pill shrinks.
+The link list is one `grid-template-columns: auto 1fr auto auto` row per link (icon · label · note · arrow) separated by hairlines. The CTA row wraps with 0.75rem gap. Single breakpoint at 560px: notes drop out, rows go 3-column, footer stacks, chip shrinks and drops its English gloss.
 
 ## Elevation & Depth
 
-Flat by default. No box-shadow exists at rest anywhere in the system. Depth is conveyed three ways instead: the full-bleed radial glow behind the hero (`radial-gradient(60rem 30rem ellipse at 50% -12rem, var(--glow), transparent 65%)`), hairline lines dividing rows, and the pulse animation's expanding soft ring — motion as depth, not shadow.
+No shadows at rest. The one box-shadow is the pulse dot's transient expanding ring. Depth is atmosphere: a fixed film-grain overlay (SVG feTurbulence, opacity .055, 180px tile) covering the whole viewport, and motion itself — roll-in, marquee, grain jitter. `html { overflow-x: clip }` guards the nowrap title.
 
 ## Shapes
 
-Two radii only. **Pill** (999px) marks verification identity: the nav pill and its pulse dot (and the wordmark dot, 50%). **Control** (12px) marks actionable buttons. Focus outlines get a slight 4px radius. Borders are 1px hairlines everywhere; there is no heavy stroke in the system. Icons are 24px-grid line icons at 1.8 stroke (keybase-style) or brand fills (GitHub, X, Medium, SoundCloud).
+Everything is a rectangle; corner radius is 0 throughout (buttons, chip, rows). The only circle is the 7px pulse dot. Borders are 1px hairlines. Icons are 24px-grid line icons at 1.8 stroke or brand fills (GitHub, X, Medium, SoundCloud), 20px in rows.
 
 ## Components
 
 ### Buttons
-- **Shape:** 12px radius, 1px border, inline-flex with 0.55rem icon gap
-- **Primary:** page-inverted fill (`--btn-primary-bg`/`--btn-primary-fg`), transparent border, padding 0.62rem × 1.15rem, weight 600 at 0.9rem
-- **Secondary:** surface fill, hairline border; hover shifts border to `--muted`
-- **Hover / Active / Focus:** primary dims to 88% opacity on hover; all buttons `scale(0.98)` on press; 150ms ease transitions; global `:focus-visible` = 2px accent outline, 3px offset
+- **Shape:** sharp rectangle, 1px border, inline-flex, 0.6rem icon gap, 0.78rem/600 caps at +0.1em
+- **Primary:** Ink fill on Screen text (`--invert-bg`/`--invert-fg`), padding 0.72rem × 1.3rem; hover empties to transparent bg, fg text, hairline-strong border
+- **Secondary:** transparent with hairline-strong border; hover inverts to Ink fill
+- **Press:** `scale(0.98)`; all transitions 160ms ease; `:focus-visible` = 2px fg outline, 3px offset
 
-### Verification Pill (signature)
-- **Style:** 999px pill, surface fill, hairline border, muted 0.8rem text, accent dot with 2.4s ease-out infinite pulse (0 → 7px expanding soft ring via box-shadow)
-- **Hover:** border turns accent, text brightens to fg
-- **Motion:** pulse stops entirely under `prefers-reduced-motion: reduce`
+### Verified Chip (nav)
+- **Style:** hairline-bordered rectangle, credits microtype, muted; white 7px pulse dot (2.4s ring)
+- **Hover:** full title-card inversion
+- **Mobile:** 0.62rem, gloss dropped
 
 ### Link List Rows
-- **Structure:** full-width hairline-bordered rows in a 4-column grid (icon 20px · label · note · arrow 15px), padding 0.85rem × 0.4rem, 1rem gap
-- **Hover:** background wash (`--hover`), icon recolors to accent, and the diagonal arrow fades in from a (−4px, 4px) offset — all at 150ms
-- **State:** static; the page has no selected state
+- **Structure:** hairline rows, 4-column grid (20px icon · label · note · 15px arrow), 0.9rem × 0.5rem padding, 1rem gap
+- **Hover:** the signature — full inversion to Ink fill; icon, note, and arrow flip to inversion-ink; arrow slides in from (−4px, 4px); 160ms
+- **Reduced motion:** arrows statically visible
+
+### Ticker (signature motion)
+- **Style:** full-bleed strip, hairline rules top and bottom, credits microtype, aria-hidden decorative repetition of verified facts (SIGNATURE VERIFIED · KEYBASE ED25519 · TETUO41.COM · TOKYO · HIROKI HATSUSHIKA)
+- **Motion:** seamless `translateX(-50%)` loop, 80s linear (~64px/s); each copy wider than the widest viewport; stops dead under reduced motion
+
+### Film Grain
+- **Style:** fixed overlay, feTurbulence noise tile (180px), opacity .055, pointer-events none
+- **Motion:** 0.9s `steps(1)` position jitter (~8fps); static under reduced motion
 
 ### Navigation
-- Flex space-between in the shared 44rem column: 700-weight wordmark + accent dot on the left, verification pill on the right. No active state — the wordmark is the home link.
+- Flex space-between in the 56rem column: Archivo Black uppercase wordmark left, verified chip right.
 
 ## Do's and Don'ts
 
 ### Do:
-- **Do** pair every color change with its dark-theme twin; both themes are first-class and OS-driven.
-- **Do** keep all transitions at 150ms ease, and honor `prefers-reduced-motion` (kill the rise animation, pulse, and smooth scroll).
-- **Do** use hairlines (1px `--hairline`) for all divisions and containment.
-- **Do** reserve Geist Mono for fingerprints, proofs, and machine-facing metadata.
-- **Do** invert the primary button against the current theme's page background.
+- **Do** keep the theme black-fixed; both `theme-color` metas and `color-scheme` say #050505 / dark.
+- **Do** make every interactive surface invert on hover — one gesture, system-wide, 160ms.
+- **Do** honor `prefers-reduced-motion`: no roll-in, no pulse, no marquee, no grain jitter; arrows visible.
+- **Do** set credits microtype as tracked Archivo caps (+0.14em), and size display type from measured ink, not viewport guesses.
+- **Do** keep the ticker and grain decorative: aria-hidden, no unique content, machine text stays in mono.
 
 ### Don't:
-- **Don't** add box-shadows or card surfaces; this system is built from lines and whitespace.
-- **Don't** introduce a second accent hue or gradient fills; indigo is the only chromatic voice.
-- **Don't** use the accent as a large background fill, badge, or tag color.
-- **Don't** fabricate content (bios, article lists) — the page states only verified facts and confirmed links.
-- **Don't** track the display type loosely; the −0.04em tightening at 800 weight is the look.
+- **Don't** introduce any chromatic color, gradient, or a light theme; monochrome is the identity.
+- **Don't** round corners or add shadows at rest; rectangles and hairlines only.
+- **Don't** set body copy in mono, or decoration in mono — mono is proof text only.
+- **Don't** fabricate content; the page states only verified facts and confirmed links.
+- **Don't** add a second continuous motion; the ticker is the page's only loop.
