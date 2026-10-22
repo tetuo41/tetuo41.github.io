@@ -1,43 +1,41 @@
-# Astro Starter Kit: Minimal
+# tetuo41.com
 
-```sh
-pnpm create astro@latest -- --template minimal
-```
+tetuo41(Hiroki Hatsushika)の身元・活動・一次リンクへの入口。Keybase の署名で検証された名刺ページ。
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- 本番: [https://tetuo41.com](https://tetuo41.com) / [https://www.tetuo41.com](https://www.tetuo41.com)
+- スタック: Astro 7(静的出力)+ Cloudflare Workers(Static Assets)
+- 恒常要件: `https://tetuo41.com/keybase.txt` を常に配信すること(改変・削除禁止)
 
-## 🚀 Project Structure
+## コマンド
 
-Inside of your Astro project, you'll see the following folders and files:
+| コマンド | 動作 |
+| :-- | :-- |
+| `pnpm install` | 依存関係の導入 |
+| `pnpm dev` | 開発サーバ(`astro dev`)。エージェント実行時は `astro dev --background` |
+| `pnpm build` | 本番ビルド → `dist/` |
+| `pnpm preview` | `dist/` をローカル配信(4321) |
+| `pnpm run deploy` | 本番デプロイ(`wrangler deploy`)。詳細は [INFRASTRUCTURE.md](./INFRASTRUCTURE.md) |
+| `bash scripts/quality-gate.sh` | デプロイ前ゲート(typecheck + build + audit) |
+
+> `pnpm deploy` は pnpm 組み込みコマンドと衝突する。必ず `pnpm run deploy` を使う。
+
+## ドキュメント
+
+| ファイル | 内容 |
+|---|---|
+| [PRODUCT.md](./PRODUCT.md) | プロダクトの目的・ユーザー・制約(不変の product truth) |
+| [DESIGN.md](./DESIGN.md) | デザインシステム(トークン・タイポグラフィ・コンポーネント) |
+| [INFRASTRUCTURE.md](./INFRASTRUCTURE.md) | インフラ構成・デプロイ・認証・ロールバック・障害切り分け |
+| [WORKFLOW.md](./WORKFLOW.md) | エージェント開発ワークフロー・モデル割り当て・品質ゲート運営 |
+
+## 構成
 
 ```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+.
+├── public/              # 静的ファイル(keybase.txt, og.png, favicon.svg)
+├── scripts/             # quality-gate.sh / jev-risk-gate.ts
+├── src/pages/index.astro  # 唯一のページ
+├── PRODUCT.md / DESIGN.md / INFRASTRUCTURE.md / WORKFLOW.md
+├── astro.config.mjs
+└── wrangler.jsonc       # Worker 名・アセット・カスタムドメイン
 ```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).

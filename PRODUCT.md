@@ -8,7 +8,7 @@ web
 
 ## Stack
 
-Astro(静的出力)+ Cloudflare Workers 静的アセット。デプロイは `pnpm build && pnpm deploy`(wrangler)。
+Astro(静的出力)+ Cloudflare Workers 静的アセット。デプロイは `pnpm build && pnpm run deploy`(wrangler)。構成・認証・ロールバックは `INFRASTRUCTURE.md` を参照。
 
 ## Users
 
